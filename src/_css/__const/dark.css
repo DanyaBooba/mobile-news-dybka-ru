@@ -1,29 +1,7 @@
 :root {
     /* Default */
-    --bg-color: #17152b;
+    --bg-color: #000;
     --text-default: #fff;
     --text-invert: #000;
 
-    --bg-color-rgba: rgba(23, 21, 43, .5);
-
-    /* Colors */
-    --text-color-1: #000;
-    --text-color-2: #aaa;
-    --text-color-3: #252239;
-    --text-color-4: #999;
-
-    --text-link-1: #4B94FF;
-    --text-link-2: #0D6EFD;
-
-    --bg-light-1: #4C4966;
-    --bg-light-2: #5f4966;
-    --bg-light-3: #495f66;
-
-    --bg-warning: #664e49;
-
-    /* Bootstrap */
-    --bs-tertiary-bg-me: #CFECF8 !important;
-    --bg-theme-color: #333;
-    --bs-btn-active-bg: #fff !important;
-    --bs-border-color: #252239 !important;
 }

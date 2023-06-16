@@ -1,0 +1,23 @@
+.left-bar
+{
+    padding-top: 30px;
+}
+
+/* Logo */
+
+.logo {
+    width: 100%;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+
+.logo--link
+{
+    text-decoration: none;
+    border: 0;
+}
+
+.logo--link:hover svg,
+.logo--link:focus svg {
+    transform: rotate(-7deg) scale(1.1, 1.1);
+}
