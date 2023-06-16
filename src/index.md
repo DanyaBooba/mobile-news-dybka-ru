@@ -13,7 +13,7 @@ layout: "base.njk"
 <main class="container">
     <div class="row row-cols-1 row-cols-lg-2 gx-5">
         <div class="col">
-            {% include 'courses/list-courses.njk' %}
+            123
         </div>
         <div class="col course-empty">
             <div class="d-flex align-items-center">
@@ -29,5 +29,3 @@ layout: "base.njk"
         </div>
     </div>
 </main>
-
-{% include 'footer.njk' %}
