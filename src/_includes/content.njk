@@ -3,5 +3,13 @@ layout: "container.njk"
 ---
 
 <div class="content">
+
+    <div class="d-flex align-items-center fs-5 mb-3">
+        <svg width="48" height="48" style="margin-right: 15px"><use xlink:href="/img/icons.svg#chevron-left"></use></svg>
+        <a href="/" class="link" aria-label="На главный экран">
+            На главный экран
+        </a>
+    </div>
+
     {{ content | safe }}
 </div>

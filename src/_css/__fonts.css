@@ -6,7 +6,7 @@
     src: url("/fonts/HalvarBreit/HalvarBreit-Rg.ttf");
 }
 
-/* @font-face {
+@font-face {
     font-family: Geologica-Bold;
     font-style: bold;
     src: url("/fonts/Geologica/Geologica-Bold.woff") format("woff"),
@@ -18,7 +18,7 @@
     font-style: bold;
     src: url("/fonts/HalvarBreit/HalvarBreit.woff") format("woff"),
         url("/fonts/HalvarBreit/HalvarBreit.woff2") format("woff2");
-} */
+}
 
 /* Set */
 p,

@@ -26,7 +26,7 @@
 
 .posts .card .title span {
     margin-top: auto;
-    color: var(--text-invert);
+    color: #fff;
     font-family: HalvarBreit;
     font-size: 30px;
 }

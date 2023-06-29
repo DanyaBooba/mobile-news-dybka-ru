@@ -6,7 +6,7 @@ layout: "container.njk"
     <div class="container">
         <div class="row row-cols-1 row-cols-lg-1">
             {% for post in posts %}
-            <div class="col">
+            <div class="col px-0">
                 <a href="/articles/{{ post.link }}/" class="card">
                     <img src="/articles/{{ post.link }}/cap.jpg" alt="{{ post.alt }}">
                     <div class="card-img-overlay title">

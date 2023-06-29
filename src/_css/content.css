@@ -1,4 +1,43 @@
 .content
 {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.content h3 {
+    font-size: 27px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-2);
+}
+
+.content .subtitle {
+    font-size: 20px;
+    color: var(--text-color-2);
+    margin-bottom: 30px;
 }

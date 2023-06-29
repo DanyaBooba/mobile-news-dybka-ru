@@ -1,0 +1,10 @@
+.link {
+    color: var(--text-default);
+    border-bottom: 1px solid var(--text-color-4);
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    border-bottom: 1px solid var(--text-default);
+}

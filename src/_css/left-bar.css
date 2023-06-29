@@ -52,7 +52,7 @@
 .left-bar--list .list-group-item svg {
     width: 32px;
     height: 32px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 /* Social */
@@ -60,6 +60,7 @@
 .left-bar--social {
     display: flex;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .left-bar--social a {
@@ -71,4 +72,16 @@
 .left-bar--social a svg {
     width: 32px;
     height: 32px;
+}
+
+/* Container */
+
+.left-bar--container {
+    margin-bottom: 20px;
+}
+
+.left-bar--container .row .col
+{
+    margin-bottom: 5px;
+    font-size: 18px;
 }
