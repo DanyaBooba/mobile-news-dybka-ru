@@ -1,5 +1,5 @@
 ---
-layout: "main.njk"
+layout: "container.njk"
 ---
 
-Main page
+Main pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain page

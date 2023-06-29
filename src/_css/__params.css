@@ -1,11 +1,14 @@
 :root {
-    --border-radius-1: 8px;
-    --border-radius-2: 12px;
-    --border-radius-3: 30px;
 
-    --border-radius-macos: 10px;
+    /* Border radius */
+    --border-radius-1: 6px;
+    --border-radius-2: 8px;
+    --border-radius-3: 10px;
+    --border-radius-4: 12px;
 
+    /* Delay */
     --delay-1: .3s;
 
+    /* Colors */
     --list-group-item-color: rgba(0, 170, 255, 0.3);
 }

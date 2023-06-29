@@ -4,7 +4,7 @@ layout: "base.njk"
 
 <div class="container-fluid">
   <div class="row row-cols-1">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="left-bar">
         <a href="/" class="logo--link">
           <svg xmlns="http://www.w3.org/2000/svg" class="see-at-pc logo" viewBox="0 0 1211.79 303.25">
@@ -23,20 +23,11 @@ layout: "base.njk"
                 d="M627.27 196.92q-17.52 0-29.86-5.43a39.27 39.27 0 0 1-21.52-21.12l-36.61 18.75c.71 1.22 1.43 2.43 2.22 3.6q11.22 16.8 30.85 26t44.56 9.26a133.84 133.84 0 0 0 38.88-5.51 109.66 109.66 0 0 0 32.22-15.43v-27.65a104.68 104.68 0 0 1-28.88 13 115.77 115.77 0 0 1-31.86 4.53ZM680.02 117.02l-30.55 15.66a45.76 45.76 0 0 1 2.36 7h-16l-53.48 27.4h109.33q0-26.4-9.5-45.91c-.67-1.44-1.39-2.8-2.16-4.15Z" />
           </svg>
         </a>
-        <ul>
-          <li>
-            <a href="#">
-              text
-            </a>
-          </li>
-        </ul>
+        {% include "left-bar.njk" %}
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
       {{ content | safe }}
-    </div>
-    <div class="col-md-3">
-        right bar
     </div>
   </div>
 </div>

@@ -7,7 +7,7 @@
 
 .logo {
     width: 100%;
-    padding-right: 25px;
+    padding: 0 80px;
     margin-bottom: 30px;
 }
 
@@ -19,5 +19,20 @@
 
 .logo--link:hover svg,
 .logo--link:focus svg {
-    transform: rotate(-7deg) scale(1.1, 1.1);
+    transform: rotate(-3deg) scale(1.025, 1.025);
+}
+
+/* List */
+
+.left-bar--list .list-group-item {
+    background: var(--bg-light-1);
+    border: 0 !important;
+    border-radius: var(--border-radius-3);
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.left-bar--list .list-group-item:hover {
+    background: var(--bg-light-1-hover);
 }
