@@ -1,0 +1,32 @@
+.posts {
+    margin-top: 30px;
+}
+
+/* Card */
+
+.posts .card {
+    border-radius: var(--border-radius-4);
+    border: 0 !important;
+    margin-bottom: 15px;
+}
+
+.posts .card img {
+    border-radius: var(--border-radius-4);
+    border-bottom-right-radius: var(--border-radius-4);
+}
+
+.posts .card .card-img-overlay {
+    border-radius: var(--border-radius-4);
+}
+
+.posts .card .title {
+    display: flex;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .9) 0, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.posts .card .title span {
+    margin-top: auto;
+    color: var(--text-invert);
+    font-family: HalvarBreit;
+    font-size: 30px;
+}

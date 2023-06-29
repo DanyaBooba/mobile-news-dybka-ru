@@ -2,4 +2,4 @@
 layout: "posts.njk"
 ---
 
-tech
+more

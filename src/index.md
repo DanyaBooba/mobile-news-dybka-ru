@@ -1,5 +1,19 @@
 ---
-layout: "container.njk"
+layout: "posts.njk"
+posts:
+  - name: "Название"
+    link: "example"
+    alt: "Описание"
+  - name: "Название"
+    link: "example"
+    alt: "Описание"
+  - name: "Название"
+    link: "example"
+    alt: "Описание"
+  - name: "Название"
+    link: "example"
+    alt: "Описание"
+  - name: "Название"
+    link: "example"
+    alt: "Описание"
 ---
-
-Main pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain pagepageMain pageMain pageMain pageMain pageMain pageMain page

@@ -21,7 +21,7 @@ gulp.task("html", () => {
 
 // Styles:index
 
-gulp.task("stylesindex", () => {
+gulp.task("styles:index", () => {
 	return gulp
 		.src(["src/_css/*.css", "src/_css/adaptive/*.css"])
 		.pipe(autoprefixer())
@@ -32,7 +32,7 @@ gulp.task("stylesindex", () => {
 
 // Styles:const
 
-gulp.task("stylesconst", () => {
+gulp.task("styles:const", () => {
 	return gulp
 		.src("src/_css/__const/*.css")
 		.pipe(autoprefixer())
@@ -49,7 +49,21 @@ gulp.task("javascript", () => {
 // Media
 
 gulp.task("media", () => {
-	return gulp.src("src/_media/**/*").pipe(gulp.dest("dist/img"));
+	return gulp.src("src/_img/**/*").pipe(gulp.dest("dist/img"));
+});
+
+// Media posts
+
+gulp.task("media:posts", () => {
+	return gulp
+		.src([
+			"src/articles/**/*.jpg",
+			"src/articles/**/*.jpeg",
+			"src/articles/**/*.png",
+			"src/articles/**/*.webp",
+			"src/articles/**/*.avi",
+		])
+		.pipe(gulp.dest("dist/articles/"));
 });
 
 // Fonts
@@ -68,12 +82,13 @@ gulp.task("htaccess", () => {
 
 gulp.task("watch", () => {
 	gulp.watch("public/**/*.html", gulp.series("html"));
-	gulp.watch("src/**/*.css", gulp.series("stylesindex", "stylesconst"));
+	gulp.watch("src/**/*.css", gulp.series("styles:index", "styles:const"));
 	gulp.watch("src/**/*.js", gulp.series("javascript"));
 	gulp.watch(
 		["src/_fonts/**/*", "src/_media/**/*"],
 		gulp.series("fonts", "media")
 	);
+	gulp.watch("src/articles/**/*", gulp.series("media:posts"));
 });
 
 // Server
@@ -96,12 +111,13 @@ gulp.task(
 	gulp.series(
 		gulp.parallel(
 			"html",
-			"stylesindex",
-			"stylesconst",
+			"styles:index",
+			"styles:const",
 			"javascript",
 			"fonts",
 			"media",
-			"htaccess"
+			"htaccess",
+			"media:posts"
 		),
 		gulp.parallel("watch", "serve")
 	)

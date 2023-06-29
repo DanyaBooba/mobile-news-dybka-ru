@@ -1,1 +1,5 @@
+---
+layout: "posts.njk"
+---
+
 games

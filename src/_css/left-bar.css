@@ -1,6 +1,8 @@
 .left-bar
 {
     padding-top: 30px;
+    top: 2rem;
+    position: sticky !important;
 }
 
 /* Logo */
@@ -24,15 +26,49 @@
 
 /* List */
 
+.left-bar--list {
+    margin-bottom: 20px;
+}
+
 .left-bar--list .list-group-item {
+    color: var(--text-default);
     background: var(--bg-light-1);
     border: 0 !important;
     border-radius: var(--border-radius-3);
     margin-bottom: 10px;
-    padding: 20px 30px;
-    font-size: 20px;
+    padding: 16px 30px;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    font-family: HalvarBreit;
+    text-transform: lowercase;
 }
 
 .left-bar--list .list-group-item:hover {
     background: var(--bg-light-1-hover);
+}
+
+.left-bar--list .list-group-item svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+/* Social */
+
+.left-bar--social {
+    display: flex;
+    text-align: center;
+}
+
+.left-bar--social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-bar--social a svg {
+    width: 32px;
+    height: 32px;
 }
