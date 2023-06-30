@@ -30,5 +30,5 @@
 - <a href="/more/archive/uploading-the-laravel-project-to-the-server/" class="link">Выгрузка проекта Laravel на сервер</a>
 - <a href="/more/archive/results-of-the-first-academic-month/" class="link">Итоги первого учебного месяца</a>
 - <a href="/more/archive/subdomains/" class="link">Поддомены</a>
-- <a href="/more/archive/the-next-creagoo-project-live.creagoo.ru/" class="link">Следущий проект Creagoo — live.creagoo.ru</a>
+- <a href="/more/archive/the-next-creagoo-project-live-creagoo-ru/" class="link">Следущий проект Creagoo — live.creagoo.ru</a>
 - <a href="/more/archive/this-is-my-macbook/" class="link">Это мой макбук</a>
