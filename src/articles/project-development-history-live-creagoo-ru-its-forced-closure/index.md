@@ -1,9 +1,10 @@
 # История разработки проекта live.creagoo.ru — его вынужденное закрытие
 
-live.creagoo.ru должен был заменить основной сайт Creagoo.
+<div class="subtitle">Проект должен был заменить основной сайт Creagoo.</div>
 
-<img src="/img/posts/p003.jpg" class="img-fluid w-100" alt="Фотография логотипа Creagoo">
-Фотография логотипа Creagoo
+![Alt](cap.jpg)
+
+<div class="subtitle">Фотография логотипа Creagoo.</div>
 
 Начнем с основ, проект live.creagoo.ru — это история изучения фреймворка Bootstrap. После CMS WordPress у меня появилось
 острое желание заняться оптимизацией сайта, а для этого требовался контроль за разработкой. Я смог получить контроль,
