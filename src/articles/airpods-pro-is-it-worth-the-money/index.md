@@ -1,11 +1,4 @@
-
 "AirPods Pro — стоит потратиться?"
-
-<link rel="stylesheet" href="/css/page.css">
-
-<body>
-
-    <main id="post--main" class="post--font-size main--post">
 
         @@include('../../../parts/p--post-newdesign-title.html', {
         "color": "#fff",
@@ -15,19 +8,18 @@
         "alt": "Наушники AirPods Pro"
 
 
-        <div class="container">
-
-            @@include('../../../parts/p--post-mediashare.html', {
-
-
-
-            @@include('../../../parts/p--font-size.html', {
-            "left": "true"
 
 
 
 
-                <p class="mb-0 visually-hidden" id="read">Перейти к чтению
+
+
+
+
+
+
+
+
 
 
                 Наушники AirPods Pro получили популярность из-за бренда Apple, который их выпускает, а также из-за нового формфактора —
@@ -109,8 +101,7 @@
 
 
 
-            <div class="container--post post--more">
-                Автор:
+
 
 
                 20.05.23 16:00
