@@ -48,6 +48,15 @@
 
 .content a {
     font-size: 20px;
+    border-bottom: 1px solid var(--text-color-4);
+    text-decoration: none;
+    color: var(--text-default);
+}
+
+.content a:hover,
+.content a:focus {
+    border-bottom: 1px solid var(--text-default);
+    color: var(--text-default);
 }
 
 .content ul {
