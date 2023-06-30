@@ -13,6 +13,8 @@
 .posts .card img {
     border-radius: var(--border-radius-4);
     border-bottom-right-radius: var(--border-radius-4);
+
+    height: 348px !important;
 }
 
 .posts .card .card-img-overlay {

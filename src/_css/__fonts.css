@@ -7,17 +7,10 @@
 }
 
 @font-face {
-    font-family: Geologica-Bold;
+    font-family: Geologica-Light;
     font-style: bold;
-    src: url("/fonts/Geologica/Geologica-Bold.woff") format("woff"),
-        url("/fonts/Geologica/Geologica-Bold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: HalvarBreit;
-    font-style: bold;
-    src: url("/fonts/HalvarBreit/HalvarBreit.woff") format("woff"),
-        url("/fonts/HalvarBreit/HalvarBreit.woff2") format("woff2");
+    src: url("/fonts/Geologica/Geologica-Light.woff") format("woff"),
+        url("/fonts/Geologica/Geologica-Light.woff2") format("woff2");
 }
 
 /* Set */
