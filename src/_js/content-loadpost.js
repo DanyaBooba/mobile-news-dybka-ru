@@ -92,7 +92,7 @@ window.onscroll = function () {
 		document.documentElement.clientHeight;
 	var scrolled = (winScroll / height) * 100;
 
-	if (scrolled > 70) {
+	if (scrolled > 95) {
 		MorePosts();
 	}
 };
