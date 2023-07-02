@@ -81,21 +81,23 @@ function LoadPosts() {
 	var main = document.getElementById("postsload_mainpage");
 
 	if (main !== null) {
-		for (i = 0; i < Length(mainobject.length); i++) {
-			var obj = mainobject[i];
+		if (mainobject.length >= 3) {
+			for (i = 0; i < Length(mainobject.length); i++) {
+				var obj = mainobject[i];
 
-			var block = document.createElement("div");
-			block.classList.add("col");
-			block.classList.add("px-0");
-			block.innerHTML = GetBlock(obj.link, obj.name);
-			main.append(block);
+				var block = document.createElement("div");
+				block.classList.add("col");
+				block.classList.add("px-0");
+				block.innerHTML = GetBlock(obj.link, obj.name);
+				main.append(block);
+			}
+
+			mainobject.shift();
+			mainobject.shift();
+			mainobject.shift();
+		} else {
+			mainobject = [];
 		}
-	}
-
-	if (mainobject.length >= 3) {
-		mainobject.shift();
-		mainobject.shift();
-		mainobject.shift();
 	}
 
 	console.log(mainobject.length);
@@ -119,6 +121,18 @@ function Length(len) {
 }
 
 LoadPosts();
+
+window.onscroll = function () {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height =
+		document.documentElement.scrollHeight -
+		document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+
+	if (scrolled > 70 && mainobject.length > 0) {
+		LoadPosts();
+	}
+};
 
 // name: "Запомни эти карты";
 // link: "rememberthesecards";
