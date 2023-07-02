@@ -75,11 +75,33 @@ var mainobject = [
 		name: "История разработки проекта live.creagoo.ru — его вынужденное закрытие",
 		link: "project-development-history-live-creagoo-ru-its-forced-closure",
 	},
+	{
+		name: "Запомни эти карты",
+		link: "rememberthesecards",
+	},
+	{
+		name: "Камень ножницы бумага",
+		link: "rockpaperscissors",
+	},
+	{
+		name: "Sweetness",
+		link: "sweetness",
+	},
+	{
+		name: "Путь программиста — это трудный путь?",
+		link: "the-path-of-a-programmer-is-a-difficult-path",
+	},
+	{
+		name: "Б/У рынок: что это, с чем его едят?",
+		link: "used-market-what-is-it-with-what-it-is-eaten",
+	},
+	{
+		name: "Какие макбуки действительно стоит брать?",
+		link: "which-macbooks-are-really-worth-getting",
+	},
 ];
 
-function LoadPosts() {
-	var main = document.getElementById("postsload_mainpage");
-
+function LoadPosts(main) {
 	if (main !== null) {
 		if (mainobject.length >= 3) {
 			for (i = 0; i < Length(mainobject.length); i++) {
@@ -120,7 +142,7 @@ function Length(len) {
 	return len;
 }
 
-LoadPosts();
+LoadPosts(document.getElementById("postsload_mainpage"));
 
 window.onscroll = function () {
 	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -130,24 +152,6 @@ window.onscroll = function () {
 	var scrolled = (winScroll / height) * 100;
 
 	if (scrolled > 70 && mainobject.length > 0) {
-		LoadPosts();
+		LoadPosts(document.getElementById("postsload_mainpage"));
 	}
 };
-
-// name: "Запомни эти карты";
-// link: "rememberthesecards";
-
-// name: "Камень ножницы бумага";
-// link: "rockpaperscissors";
-
-// name: "Sweetness";
-// link: "sweetness";
-
-// name: "Путь программиста — это трудный путь?";
-// link: "the-path-of-a-programmer-is-a-difficult-path";
-
-// name: "Б/У рынок: что это, с чем его едят?";
-// link: "used-market-what-is-it-with-what-it-is-eaten";
-
-// name: "Какие макбуки действительно стоит брать?";
-// link: "which-macbooks-are-really-worth-getting";
