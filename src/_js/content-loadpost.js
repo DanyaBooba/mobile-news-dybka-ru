@@ -1,9 +1,8 @@
 var content = document.getElementById("content");
-// var children = document.getElementById("content").children;
 var count = 1;
 var max = 5;
 
-var array = [
+var arrayall = [
 	"airpods-pro-is-it-worth-the-money",
 	"babkaonthehuntclassic",
 	"change-creagoo-ru-simplify-improve-and-share",
@@ -31,11 +30,27 @@ var array = [
 	"which-macbooks-are-really-worth-getting",
 ];
 
+var currenturl = window.location.href.split("/").at(-2);
+
+for (i = 0; i < arrayall.length; i++) {
+	if (arrayall[i] === currenturl) {
+		arrayall.splice(i, 1);
+	}
+}
+
+function RandomPostUrl() {
+	var id = Math.floor(Math.random() * arrayall.length);
+	var copy = arrayall[id];
+	arrayall.splice(id, 1);
+
+	return copy;
+}
+
 function MorePosts() {
 	if (count < max) {
 		(function () {
 			var http = new XMLHttpRequest();
-			var link = "airpods-pro-is-it-worth-the-money";
+			var link = RandomPostUrl();
 
 			http.open("GET", "/articles/" + link);
 			http.onreadystatechange = function () {
@@ -45,8 +60,6 @@ function MorePosts() {
 						.getElementById("content").children;
 
 					if (dom !== null) {
-						// console.log(dom);
-
 						var block = document.createElement("div");
 						block.classList.add("post--after");
 						var str = "";
