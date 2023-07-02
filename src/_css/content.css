@@ -62,3 +62,10 @@
 .content ul {
     font-size: 20px;
 }
+
+.post--after
+{
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid var(--text-color-3);
+}
